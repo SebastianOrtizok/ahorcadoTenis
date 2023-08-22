@@ -1,0 +1,53 @@
+.contenedor {
+  float: left;
+}
+
+.instagram {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 2px;
+  border: 1px;
+  border-color: rgb(159, 159, 160);
+}
+
+.twitter {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: auto;
+  border: 1px;
+  border-color: rgb(159, 159, 160);
+}
+
+.torneos {
+  margin-top: 15px;
+  width: auto;
+  background-color: beige;
+  font-size: large;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ahorcado {
+  text-align: center;
+  margin-top: 15px;
+  width: 300px;
+}
+
+.puzzle {
+  text-align: center;
+  margin-top: 15px;
+  float: left;
+}
+
+/* de la pagina juegos.html*/
+
+.containerjuegos {
+  display: flex;
+  margin-top: 2rem;
+}

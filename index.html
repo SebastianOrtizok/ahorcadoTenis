@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Juego</title>
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg" />
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <header>
+        <h1>Aahorcado de tenis</h1>
+        <div class="informacion">
+          <div class="infoimage">
+            <img id="image" src="img/ahorcado7.gif" />
+          </div>
+          <div class="info1">
+            <p class="muestrainfo" id="parrafos"></p>
+            <p id="usadas">Usadas<br />0</p>
+            <p id="letrasacertadas">Acertadas<br />0</p>
+            <p id="letraserradas">Erradas<br />0</p>
+          </div>
+
+        </div>
+      </header>
+ 
+        <p id="info"></p>
+        <a id="muestrapalabra">Aca la palabra a encontrar</a>
+        
+
+        <div class="keyboard" id="keyboard">
+          <!-- Letras del teclado virtual -->
+          <div class="fila1">
+          <button class="key" id="q" onclick="printLetter('q')">Q</button>
+          <button class="key" id="w" onclick="printLetter('w')">W</button>
+          <button class="key" id="e" onclick="printLetter('e')">E</button>
+          <button class="key" id="r" onclick="printLetter('r')">R</button>
+          <button class="key" id="t" onclick="printLetter('t')">T</button>
+          <button class="key" id="y" onclick="printLetter('y')">Y</button>
+          <button class="key" id="u" onclick="printLetter('u')">U</button>
+          <button class="key" id="i" onclick="printLetter('i')">I</button>
+          <button class="key" id="o" onclick="printLetter('o')">O</button>
+          <button class="key" id="p" onclick="printLetter('p')">P</button>
+        </div>
+        <div class="fila2">
+          <button class="key" id="a" onclick="printLetter('a')">A</button>
+          <button class="key" id="s" onclick="printLetter('s')">S</button>
+          <button class="key" id="d" onclick="printLetter('d')">D</button>
+          <button class="key" id="f" onclick="printLetter('f')">F</button>
+          <button class="key" id="g" onclick="printLetter('g')">G</button>
+          <button class="key" id="h" onclick="printLetter('h')">H</button>
+          <button class="key" id="j" onclick="printLetter('j')">J</button>
+          <button class="key" id="k" onclick="printLetter('k')">K</button>
+          <button class="key" id="l" onclick="printLetter('l')">L</button>
+          <button class="key" id="ñ" onclick="printLetter('ñ')">Ñ</button>
+        </div>
+        <div class="fila3">
+          <button class="key" id="z" onclick="printLetter('z')">Z</button>
+          <button class="key" id="x" onclick="printLetter('x')">X</button>
+          <button class="key" id="c" onclick="printLetter('c')">C</button>
+          <button class="key" id="v" onclick="printLetter('v')">V</button>
+          <button class="key" id="b" onclick="printLetter('b')">B</button>
+          <button class="key" id="n" onclick="printLetter('n')">N</button>
+          <button class="key" id="m" onclick="printLetter('m')">M</button>
+        </div>
+          
+          <!-- Añade el resto de letras aquí -->
+        </div>
+
+          
+        </div>
+
+      <div id="muestraresultado">
+        <p id="ganaste"></p>
+        <p id="perdiste"></p>
+        <button
+          type="text"
+          id="reload"
+          onclick="javascript:window.location.reload();"
+        >
+          Volver a Jugar
+        </button>
+      </div>
+    </div>
+
+    <script src="js/codigo.js"></script>
+  </body>
+</html>
